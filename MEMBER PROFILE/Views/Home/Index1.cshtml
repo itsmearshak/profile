@@ -1,0 +1,13 @@
+﻿@{
+  
+}
+<h1>edit</h1><br />
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index1">
+    <img src="data:image/png;base64, @Model.Pic" style="width:100px;border-radius:50%"/><br />
+    <input type="text" name="id" value="@Model.Id" style="display:none;" />
+    <input type="text" name="name" value="@Model.Name" /><br />
+    <input type="text" name="email" value="@Model.Email" /><br />
+    <input type="text" name="phone" value="@Model.Phone" /><br />
+    <input type="file" name="choosefile" />
+    <input type="submit" placeholder="done" />
+</form>

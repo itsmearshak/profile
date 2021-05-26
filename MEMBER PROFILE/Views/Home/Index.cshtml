@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form  method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+        <input type="text" name="name" placeholder="Name" /><br />
+        <input type="text" name="email" placeholder="E-mail" /><br />
+        <input type="text" name="phone" placeholder="Phone" /><br />
+        <input type="file" name="choosefile" placeholder="choosefile" /><br />
+        <input type="submit" />
+    </form>
+    
+</div>
